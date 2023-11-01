@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./assets/math.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+    <div class="calculator">
+        <h1 font-size="2rem";>Simple Calculator</h1>
+        <form name="calculator">
+        <input type="text" name="display" id="display" readonly>
+        <br>
+            <div class="buttons" font-family="Rubik" , sans-serif;>
+                <input class="number" type="button" value="7" onclick="calculator.display.value += '7'">
+                <input class="number" type="button" value="8" onclick="calculator.display.value += '8'">
+                <input class="number" type="button" value="9" onclick="calculator.display.value += '9'">
+                <input class="operator" type="button" value="+" onclick="calculator.display.value += '+'">
+        
+                <input class="number" type="button" value="4" onclick="calculator.display.value += '4'">
+                <input class="number" type="button" value="5" onclick="calculator.display.value += '5'">
+                <input class="number" type="button" value="6" onclick="calculator.display.value += '6'">
+                <input class="operator" type="button" value="-" onclick="calculator.display.value += '-'">
+        
+                <input class="number" type="button" value="1" onclick="calculator.display.value += '1'">
+                <input class="number" type="button" value="2" onclick="calculator.display.value += '2'">
+                <input class="number" type="button" value="3" onclick="calculator.display.value += '3'">
+                <input class="operator" type="button" value="*" onclick="calculator.display.value += '*'">
+        
+                <input class="operator" type="button" value="C" onclick="calculator.display.value = ''">
+                <input class="number" type="button" value="0" onclick="calculator.display.value += '0'">
+                <input class="operator" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+                <input class="operator" type="button" value="/" onclick="calculator.display.value += '/'">
+            </div>
+    </form>
+    </div>
+</div>
+
+
+<!-- 
+
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="number" value="7" onclick="calculator.display.value += '7'">7</button>
+            <button class="number" value="8" onclick="calculator.display.value += '8'">8</button>
+            <button class="number" value="9" onclick="calculator.display.value += '9'">9</button>
+            <button class="operator" value="+" onclick="calculator.display.value += '+'">+</button>
+            <button class="number" value="4" onclick="calculator.display.value += '4'">4</button>
+            <button class="number" value="5" onclick="calculator.display.value += '5'">5</button>
+            <button class="number" value="6" onclick="calculator.display.value += '6'">6</button>
+            <button class="operator" value="-" onclick="calculator.display.value += '-'">-</button>
+            <button class="number" value="1" onclick="calculator.display.value += '1'">1</button>
+            <button class="number" value="2" onclick="calculator.display.value += '2'">2</button>
+            <button class="number" value="3" onclick="calculator.display.value += '3'">3</button>
+            <button class="operator" value="*" onclick="calculator.display.value += '*'">*</button>
+            <button class="clear" value="C" onclick="calculator.display.value = ''">C</button>
+            <button class="number"value="0" onclick="calculator.display.value += '0'">0</button>
+            <button class="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)">=</button>
+            <button class="operator" value="/" onclick="calculator.display.value += '/'">/</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script> -->
+</body>
+</html>

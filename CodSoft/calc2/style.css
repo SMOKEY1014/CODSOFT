@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Pixelify+Sans&family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: large;
+    display: flex;
+}
+body > div {
+    width: 33%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 48px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: relative;
+    bottom: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+
+.calculator {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+}
+
+#display {
+    width: 100%;
+    height: 10vh;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 10vh;
+    font-size: 32px;
+    background-color: white;
+}
+#b {
+    width: 205%;
+    height: 10vh;
+    font-size: 24px;
+    margin-top: 0px;
+    
+}
+#bt {
+    color: white;
+    border: #ddd;
+    height: 95%;
+    width: 75%;
+    align-items:self-end;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .calculator {
+        width: 90vw;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+        height: 80vh;
+    }
+
+    .content {
+        width: 70%;
+        height: 80%;
+        position: relative;
+        left: 50%;
+        right: 50%;
+    }
+
+    #display {
+        height: 114px;
+        font-size: 32px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    button {
+        height: 100px;
+        font-size: 32px;
+    }
+}
